@@ -1,0 +1,18 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: dubbo-consumer
+
+dubbo:
+  # 注册中心地址
+  registry:
+    address: nacos://192.168.60.123:8848?register=false
+  protocol:
+    name: dubbo
+    port: -1
+  consumer:
+    # 取消服务启动检查
+    check: false
+
